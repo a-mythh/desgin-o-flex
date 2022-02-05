@@ -236,7 +236,7 @@ body {
     font-size: 4rem;
     color: #022275;
     margin: 12vh 0px 10vh 35vw;
-    width: 30vw;
+    width: 35vw;
     text-align: center;
 }
 
@@ -255,7 +255,7 @@ body {
 .hex-layer-2 {
     display: grid;
     justify-content: center;
-    margin: -50px 0px;
+    margin: -46px 0px;
     align-content: center;
     grid-template-columns: repeat(2, 0fr);
 }
