@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&display=swap");
+
+:root {
+    --normalFont: "Righteous", sans-serif;
+    --paraFont: "Poppins", sans-serif;
+    --fontColor: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+.main-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #521755;
+}
+
+.main-container::before {
+    content: "";
+    display: block;
+    width: 100%;
+    background-image: url(./images/Waves/wave-1.png);
+    height: 37%;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    top: 63.1vh;
+}
+
+.navigation-list {
+    display: flex;
+    list-style: none;
+    margin-left: 55vw;
+    margin-top: 5.5vh;
+}
+
+.navigation-list-item a {
+    text-decoration: none;
+    font-family: var(--normalFont);
+    color: var(--fontColor);
+    margin: 0 0.7vw;
+    padding: 4px 6px;
+}
+
+.home-body {
+    display: flex;
+    flex-direction: column;
+    margin: 18vh 15vw;
+    width: 33vw;
+}
+
+.club-name {
+    font-family: var(--normalFont);
+    color: var(--fontColor);
+    font-size: 4rem;
+}
+
+.tagline1 {
+    font-family: var(--normalFont);
+    color: var(--fontColor);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.tagline2 {
+    font-family: var(--normalFont);
+    color: var(--fontColor);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.home-btn {
+    width: 11vw;
+    border-radius: 20px;
+    border: none;
+    background-color: #1e95f6;
+    padding: 5px 9px;
+    font-family: var(--normalFont);
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+}
+
+.alien-spaceship {
+    width: 15vw;
+    position: absolute;
+    top: 19vh;
+    left: 74vw;
+}
+
+.home-rocket {
+    width: 6vw;
+    position: absolute;
+    top: 3vh;
+    left: 2vw;
+}
+
+.about-container {
+    margin-top: 100vh;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.about-container::before {
+    content: "";
+    background-image: linear-gradient(120deg, #4a154c 0%, #25306a 73.23%);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.about-club h1 {
+    text-align: right;
+    margin: 5vh 0;
+    margin-right: 6vw;
+    font-family: var(--normalFont);
+    color: white;
+    font-size: 2.6rem;
+}
+
+.about-club p {
+    width: 55%;
+    text-align: right;
+    margin: 4vh 0px 5vh 38.5vw;
+    font-family: var(--paraFont);
+    font-size: 1rem;
+    color: white;
+}
+
+.about-space h1 {
+    margin-top: 8vh;
+    margin-left: 6vw;
+    font-family: var(--normalFont);
+    color: white;
+    font-size: 2.6rem;
+}
+
+.about-space p {
+    width: 50%;
+    margin: 4vh 0 5vh 6vw;
+    font-family: var(--paraFont);
+    font-size: 1rem;
+    color: white;
+}
+
+.club-logo {
+    display: inline;
+    position: relative;
+    bottom: 35vh;
+    left: 13vw;
+}
+
+.club-logo-img {
+    width: 14vw;
+}
+
+.about-space {
+    position: relative;
+    bottom: 30.5vh;
+    height: 50vh;
+}
+
+.astronaut-floating {
+    display: inline;
+    position: relative;
+    bottom: 85vh;
+    left: 72vw;
+}
+
+.astronaut-floating-img {
+    width: 20vw;
+}
+
+.work-container {
+    border-top: 1px solid #8c8993;
+}
+
+.work-container::before {
+    z-index: -1;
+    content: "";
+    background-image: url(./images/Waves/wave-2.png);
+    background-size: cover;
+    width: 100vw;
+    height: 78vh;
+    position: absolute;
+    right: 0;
+}
+
+.work-container h1 {
+    color: white;
+    display: inline-block;
+    font-family: var(--normalFont);
+    font-size: 4rem;
+    width: 25vw;
+    margin-left: 37.5vw;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 3px solid white;
+}
+
+.work-container p {
+    color: white;
+    font-family: var(--paraFont);
+    font-size: 1.2rem;
+    text-align: center;
+    width: 80vw;
+    margin: 8vh auto;
+}
+
+.work-rocket {
+    position: relative;
+    bottom: 50vh;
+    left: 2vw;
+    width: 6vw;
+}
+
+.space-container h1 {
+    font-family: var(--paraFont);
+    font-size: 4rem;
+    color: #022275;
+    margin: 12vh 0px 10vh 35vw;
+    width: 30vw;
+    text-align: center;
+}
+
+.hex-container {
+    max-width: 1200px;
+    margin: 5vh auto 1vh auto;
+}
+
+.hex-layer-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 0fr);
+    margin: -18px 0px;
+    justify-content: center;
+    align-content: center;
+}
+.hex-layer-2 {
+    display: grid;
+    justify-content: center;
+    margin: -50px 0px;
+    align-content: center;
+    grid-template-columns: repeat(2, 0fr);
+}
+.hex-layer-3 {
+    display: grid;
+    margin: -35px 0px;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 0fr);
+}
+
+.hex img {
+    width: 15vw;
+}
+
+.orbiter-img-container {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    justify-content: space-evenly;
+}
+
+.orbiter-img-container img {
+    width: 15vw;
+}
+
+.other-img-container {
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    justify-content: space-evenly;
+    margin: 10vh auto;
+}
+
+.other-img-container img {
+    width: 13vw;
+}
+
+.our-events {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    right: 0;
+}
+
+.our-events::before {
+    z-index: -1;
+    content: "";
+    background-image: url(./images/Waves/wave-4.png);
+    background-size: cover;
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    right: 0;
+}
+
+.our-events h1 {
+    color: white;
+    display: inline-block;
+    font-family: var(--normalFont);
+    font-size: 4rem;
+    width: 25vw;
+    margin-top: 10vh;
+    margin-left: 37.5vw;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 3px solid white;
+}
+
+.events-box-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 23vh;
+}
+
+.events-box {
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    width: 13vw;
+    padding: 2vh 1vw;
+    background-color: purple;
+    background-image: linear-gradient(120deg, #4a154c 0%, #25306a 73.23%);
+    border-radius: 15px;
+    justify-content: space-around;
+}
+
+.contact-container {
+    padding-top: 2vh;
+    margin-top: 113vh;
+    height: 100vh;
+}
+
+.contact-container h1 {
+    color: #521755;
+    display: inline-block;
+    font-family: var(--normalFont);
+    font-size: 4rem;
+    margin-left: 4vw;
+    margin-top: 0;
+}
+
+.contact-container input,
+textarea {
+    display: block;
+    margin-left: 4vw;
+    width: 28vw;
+    margin-bottom: 1vh;
+    padding: 5px;
+    font-family: var(--normalFont);
+    font-size: 1rem;
+    resize: none;
+}
+
+.contact-btn {
+    margin-left: 25vw;
+    border-radius: 30px;
+    width: 7vw;
+    font-family: var(--normalFont);
+    font-size: 1rem;
+    color: white;
+    background-color: #1e95f6;
+    border: none;
+    padding: 1vh;
+    cursor: pointer;
+}
